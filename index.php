@@ -24,10 +24,23 @@ $search = Usuario::search("jo");
 echo json_encode($search);
 */
 
-//Carrega um usuário usando o login e senha 
-
+/*Carrega um usuário usando o login e senha 
 $usuario = new Usuario();
 $usuario->login("joao", "123654");
+echo $usuario;
+*/ 
+
+/*Criando um usuário
+$aluno = new Usuario("aluno", "@luno"); 
+$aluno->insert();
+echo $aluno;
+*/ 
+
+$usuario = new Usuario();
+
+$usuario->loadbYId(7);
+
+$usuario->update("professor", "!@$%¨&*");
 
 echo $usuario;
 ?>
